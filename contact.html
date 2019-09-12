@@ -11,23 +11,43 @@
       <h1>Fridas sida</h1>
       </div>
       <nav>
-        <ul>
-          <li> <a href="index.html">Hem</a></li>
-          <li> <a href="about.html">Om mig</a></li>
-          <li> <a href="movies.html">Filmlista</a></li>
-          <li> <a href="links.html">Länkar</a></li>
-          <li> <a href="contact.html">Kontakta mig</a></li>
-        </ul>
+        <a href="index.html">Hem</a>
+        <a href="about.html">Om mig</a>
+        <a href="movies.html">Filmlista</a>
+        <a href="links.html">Länkar</a>
+        <a class="point" href="contact.html">Kontakta mig</a>
       </nav>
     </header>
     <article>
-
+      <h1>Kontaktformulär</h1>
+      <form>
+      <fieldset>
+        <legend>Kontakta mig</legend>
+      <br><label for="namn">Namn</label></br>
+      <input type="text" required placeholder="Namn">
+      <br><label for="e-mail">E-mail</label></br>
+      <input type="email" required placeholder="E-mail">
+      <br><label for="subject">Välj ett ämne:</label></br>
+        <select id="subject">
+        <option value="Inredning">Inredning</option>
+        <option value="Mat">Mat</option>
+        <option value="Butiker">Butiker</option>
+        <option value="Annat">Annat</option>
+      </select></br>
+      <br><label for="message">Meddelande:</label></br>
+      <textarea id="message" name="message"
+          rows="5" cols="33" required maxlength="100">
+      </textarea>
+      <br><button type"submit">Skicka in</button></br>
+    </fieldset>
+  </form>
     </article>
     <aside>
       <img src="blad.jpg" alt="ett blad">
     </aside>
     <footer>
-
+      <p>Frida Lindström</p>
+      <p>lindstromfrida@yahoo.se</p>
     </footer>
   </body>
 </html>
